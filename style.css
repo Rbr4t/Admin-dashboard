@@ -1,14 +1,17 @@
 body{
     margin: 0;
     padding: 0;
+    height: 100vh;
     display: flex;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
 }
-
+img {
+    width: 50px;
+}
 .content {
     display: flex;
     flex-direction: column;
@@ -21,6 +24,7 @@ p, h1, h2, h3 {
     flex-direction: column;
     justify-content: space-between;
     background-color: #f0f9ff;
+    background-color: #e0f2fe;
     padding: 30px 80px 30px 30px;
 }
 .header > div{
@@ -73,6 +77,7 @@ p, h1, h2, h3 {
     min-height: 40px;
     min-width: 80px;
     background-color: #8b5cf6;
+    background-color: #3b82f6;
     border: 0;
     border-radius: 40px;
     color: white;
@@ -112,63 +117,75 @@ p, h1, h2, h3 {
 
 /* Main content area*/
 .media {
-    background-color: rgb(219, 219, 219);
+    background-color: #f0f9ff;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    
+    flex: 1;
 }
 
 .your-projects {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid white;
+    padding: 40px;
+    
     
 }
 .your-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
-    grid-gap: 50px;
+    grid-gap: 20px;
 }
+
 .project{
-    width: 300px;
+    height: 200px;
     background-color: white;
     border-left: 8px solid orange;
     border-radius: 10px;
     padding: 15px
 }
+
+/*secondary content*/
 .secondary-content {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 40px;
     
 }
 .announcements{
     display: flex;
     flex-direction: column;
-    border: 1px solid white
+    
+    
 }
 .announcements-content{
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
 }
 .event{
-    background-color: greenyellow;
+   
+    
 }
 
 .trending{
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
+    
 }
 .trending-content{
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
 }
-.area{
-    background-color: blueviolet;
+.trending-content>div{
+    display: flex; 
+    gap: 10px;
 }
 
 
@@ -189,4 +206,10 @@ p, h1, h2, h3 {
 }
 #main-icon{
     width:60px;
+}
+#penguinimous{
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    margin: -25px
 }
