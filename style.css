@@ -4,6 +4,16 @@ body{
     display: flex;
 }
 
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 /*Header stuff*/
 
 .header {
@@ -11,6 +21,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     background-color: aquamarine;
+    
 }
 .header > div{
     display: flex;
@@ -36,6 +47,7 @@ body{
 .elements-on-bottom{
     justify-content: space-between;
 }
+
 .elements-on-bottom> div{
     display: inherit;
     flex-direction: row;
@@ -47,12 +59,73 @@ body{
     background-color: bisque;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding: 30px;
+    
 }
+
+.sidebar p{
+    padding: 10px;
+}
+
 
 /* Main content area*/
 .media {
-    background-color: dimgrey;
-    display: flex;
+    background-color: rgb(219, 219, 219);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
 }
 
+.your-projects {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    
+}
+.your-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 50px;
+}
+.project{
+    width: 300px;
+    background-color: white;
+    border-left: 10px solid orange;
+    border-radius: 10px;
+    padding: 15px
+}
+.secondary-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.announcements{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white
+}
+.announcements-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.event{
+    background-color: greenyellow;
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+}
+.trending-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.area{
+    background-color: blueviolet;
+}
