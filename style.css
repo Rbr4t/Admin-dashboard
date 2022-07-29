@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*Header stuff*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+.header > div{
+    display: flex;
+    
+}
+.elements-on-top{
+    justify-content: space-between;
+    gap: 250px;
+}
+.notifications{
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.searchbar{
+    display: inherit;
+    flex: 1;
+    height: 40px;
+    margin: 15px;
+}
+
+.elements-on-bottom{
+    justify-content: space-between;
+}
+.elements-on-bottom> div{
+    display: inherit;
+    flex-direction: row;
+    gap: 15px;
+}
+
+/*Sidebar stuff*/
+.sidebar{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main content area*/
+.media {
+    background-color: dimgrey;
+    display: flex;
+}
+
