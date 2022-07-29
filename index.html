@@ -9,34 +9,37 @@
 </head>
 <body>
     <div class="sidebar">
-        <h2>Dashboard</h2>
+        <span class="icon"><img src="icons/chess-rook.svg" alt="icon" id="main-icon"><h1>Dashboard</h1></span>
         <br>
-        <p>Home</p>
-        <p>Profile</p>
-        <p>Messages</p>
-        <p>History</p>
-        <p>Tasks</p>
-        <p>Communities</p>
+        <span><img src="icons/home.svg" alt="home"><a href="#">Home</a></span>
+        <span><img src="icons/account-outline.svg" alt="account"> <a href="#">Profile</a></span>
+        <span><img src="icons/message.svg" alt="message"> <a href="#">Messages</a></span>
+        <span><img src="icons/history.svg" alt="history"> <a href="#">History</a></span>
+        <span><img src="icons/format-list-checks.svg" alt="todo"> <a href="#">Tasks</a></span>
+        <span><img src="icons/forum.svg" alt="forum"> <a href="#">Communities</a></span>
         <br>
-        <p>Settings</p>
-        <p>Support</p>
-        <p>Privacy</p>
+        <span><img src="icons/account-cog.svg" alt="settings"> <a href="#">Settings</a></span>
+        <span><img src="icons/face-agent.svg" alt="support"> <a href="#">Support</a></span>
+        <span><img src="icons/earth.svg" alt="privacy"> <a href="#">Privacy</a></span>
     </div>
     <div class="content">
         <div class="header">
             <div class="elements-on-top">
-                <input type="search" class="searchbar">
+                <div class="search">
+                    <img src="icons/account-search.svg" class="search-icon">
+                    <input type="search" class="searchbar">
+                </div>
                 <div class="notifications">
-                    <h3>Bell</h3>
-                    <h3>profile-pic</h3>
-                    <h3>First name, Last name</h3>
+                    <a href="#"><img src="icons/bell-badge.svg" class="bell" alt="notifications"></a>
+                    <img src="icons/profile-removebg-preview.png" alt="profile-pic" class="profile-small">
+                    <h3>Pingu McPingu</h3>
                 </div>
             </div>
             
             <div class="elements-on-bottom">
                 <div class="greeting"> 
-                    <h3>profile-pic</h3>
-                    <p>Hi there, <br> <strong>First name, Last name</strong> </p>
+                    <img src="icons/profile-removebg-preview.png" alt="profile-pic" class="profile-big">
+                    <p id="greeting">Hi there, <br><span>Pingu McPingu (@pingudoesstuff)</span> </p>
                 </div>
                 
                 <div class="buttons-section">

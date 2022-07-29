@@ -20,8 +20,8 @@ p, h1, h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: aquamarine;
-    
+    background-color: #f0f9ff;
+    padding: 30px 80px 30px 30px;
 }
 .header > div{
     display: flex;
@@ -29,45 +29,86 @@ p, h1, h2, h3 {
 }
 .elements-on-top{
     justify-content: space-between;
-    gap: 250px;
+    gap: 400px;
+    align-items: center;
 }
 .notifications{
-    display: inherit;
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
+    flex: 0 2 auto
 }
 .searchbar{
     display: inherit;
     flex: 1;
     height: 40px;
     margin: 15px;
+    border-radius: 40px;
 }
-
+.search{
+    margin-left: 10px;
+    display: flex;
+    flex: 1 2 auto;
+    
+}
 .elements-on-bottom{
     justify-content: space-between;
+    align-items: center;
 }
-
+#greeting{
+    font-weight: bold;
+}
+#greeting span{
+    font-size: 20px;
+}
 .elements-on-bottom> div{
     display: inherit;
     flex-direction: row;
     gap: 15px;
+    align-items: center;
+}
+    /*BUttons*/
+.buttons{
+    min-height: 40px;
+    min-width: 80px;
+    background-color: #8b5cf6;
+    border: 0;
+    border-radius: 40px;
+    color: white;
+}
+.buttons:hover{
+    cursor: pointer;
 }
 
 /*Sidebar stuff*/
 .sidebar{
-    background-color: bisque;
+    background-color: #3b82f6;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 30px;
-    
+    color: white;
+    gap: 5px;
 }
 
-.sidebar p{
+.sidebar a{
     padding: 10px;
+    color: white;
+    text-decoration: none;
 }
+.sidebar span{
+    display: flex;
+    align-items: center;
 
+}
+.sidebar span img{
+    width: 40px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
 
 /* Main content area*/
 .media {
@@ -92,7 +133,7 @@ p, h1, h2, h3 {
 .project{
     width: 300px;
     background-color: white;
-    border-left: 10px solid orange;
+    border-left: 8px solid orange;
     border-radius: 10px;
     padding: 15px
 }
@@ -128,4 +169,24 @@ p, h1, h2, h3 {
 }
 .area{
     background-color: blueviolet;
+}
+
+
+
+/*Icons*/
+.search-icon {
+    width: 40px;
+}
+.bell{
+    width: 40px;
+}
+.profile-small{
+    width: 50px;
+    padding: 0;
+}
+.profile-big{
+    width: 80px;
+}
+#main-icon{
+    width:60px;
 }
